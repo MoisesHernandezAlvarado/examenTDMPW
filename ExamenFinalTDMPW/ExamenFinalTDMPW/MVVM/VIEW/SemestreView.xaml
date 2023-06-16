@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenFinalTDMPW.MVVM.VIEW.SemestreView"
+             Title="SemestreView"
+             BackgroundImageSource="luca.jpg"
+             >
+    <Grid RowDefinitions=".20*,.20*,.20*,.20*,.20*" ColumnDefinitions=".20*,.20*,.20*,.20*,.20*">
+
+        <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Margin="10,30,10,40" HasShadow="True">
+          <Grid>
+        <Image Source="estrellas.jpg" Aspect="Fill" HeightRequest="75" WidthRequest="370" />
+        <Label Text="SEMESTRE" Grid.Row="0"
+               TextColor="Yellow" FontFamily="jedi"
+               Grid.Column="5"
+               FontSize="34"
+               HorizontalTextAlignment="Center"/>
+    </Grid>
+        </Frame>
+
+
+        <Label Grid.Row="0" Text="introduce el Nombre de la materia" TextColor="Yellow"
+             
+               Grid.Column="0"
+               Grid.ColumnSpan="5"
+               HorizontalTextAlignment="Center"
+               FontFamily="jedi"
+               VerticalOptions="End"/>
+
+        <Entry Grid.Row="1" HorizontalOptions="Center"
+               VerticalOptions="Start" Grid.Column="0"
+               BackgroundColor="LightYellow"
+               Grid.ColumnSpan="5"
+               WidthRequest="250"
+               Margin="0,10,0,0"
+               Placeholder="ej. TDMPW"
+               PlaceholderColor="Gray"/>
+
+        <Label Grid.Row="1"
+               VerticalTextAlignment="Center"
+               VerticalOptions="Center"
+               Text="valor de cada Parcial :"
+               Margin="0,0,0,-20"
+               Grid.Column="0" Grid.ColumnSpan="5"
+               HorizontalTextAlignment="Center"
+               FontSize="25" FontFamily="jedi"
+               FontAttributes="Bold"
+               TextColor="Yellow"/>
+
+        <Entry Grid.Row="1"
+               Grid.Column="0"
+               BackgroundColor="LightYellow"
+               VerticalOptions="End"
+               Margin="0,30,-20,-20"
+               Placeholder="P1"
+               PlaceholderColor="Gray"/>
+         <Entry Grid.Row="1"
+               Grid.Column="2"
+               BackgroundColor="LightYellow"
+               VerticalOptions="End"
+               Margin="-25,30,-20,-20"
+               Placeholder="P2"
+               PlaceholderColor="Gray"/>
+         <Entry Grid.Row="1"
+               Grid.Column="4"
+               BackgroundColor="LightYellow"
+               VerticalOptions="End"
+               Margin="-25,30,0,-20"
+               Placeholder="P3"
+               PlaceholderColor="Gray"/>
+
+        <Label Grid.Row="2" Grid.Column="0"
+               Grid.ColumnSpan="5"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               Text="Calificacion P1 Y P2"
+               TextColor="Yellow"
+               FontSize="25"
+               FontFamily="jedi"/>
+
+        <Entry Grid.Row="2" Grid.Column="1"
+               BackgroundColor="LightYellow"
+               VerticalOptions="End"
+               Margin="-20,0,0,0"
+               Placeholder="Ej.10"
+               PlaceholderColor="Gray"/>
+         <Entry Grid.Row="2" Grid.Column="3"
+               BackgroundColor="LightYellow"
+               VerticalOptions="End"
+               Margin="-20,0,0,0"
+               Placeholder="Ej.10"
+               PlaceholderColor="Gray"/>
+
+         <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5"
+                WidthRequest="155"
+                HeightRequest="55"
+                VerticalOptions="Start"
+                BackgroundColor="RoyalBlue"
+                Text="Check"
+                FontSize="17"
+                FontFamily="jedi"
+                TextColor="Black"
+                CornerRadius="30"
+                Margin="0,80,0,0"
+               />
+
+        </Grid>
+    
+
+</ContentPage>

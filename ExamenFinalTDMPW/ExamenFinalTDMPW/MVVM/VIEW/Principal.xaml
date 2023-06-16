@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenFinalTDMPW.MVVM.VIEW.Principal"
+             xmlns:local="clr-namespace:ExamenFinalTDMPW.MVVM.VIEW" 
+             Title="Principal"
+             SelectedTabColor="Violet"
+             BackgroundColor="Gray">
+
+    <ContentPage IconImageSource="homes.png" Title="HOME">
+         <Grid RowDefinitions=".10*, .20*, .70*" >
+            <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0.0" Color="#051937"/>
+                <GradientStop Offset="0.23" Color="#0400ff"/>
+                <GradientStop Offset="0.55" Color="#28db55"/>
+                <GradientStop Offset="0.86" Color="#605fab"/>
+                <GradientStop Offset="0.0" Color="#790975"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+            <Frame Grid.Row="0" BackgroundColor="white" HasShadow="True" Margin="15,60,15,0" HeightRequest="80">
+                <Label Grid.Row="1" Text="Welcome" TextColor="Green" FontSize="40" Margin="0,0,0,0" HorizontalTextAlignment="Center" FontFamily="jedi"/>
+             </Frame>
+
+            <Frame Grid.Row="1" BackgroundColor="LightGray" HasShadow="True" Margin="10,90,10,0" HeightRequest="100">
+                <Label Grid.Row="1" Text="Calcula tus Calificaciones de Materias y Semestre" TextColor="Black" FontSize="25" Margin="0,0,0,0" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="roboto"/>
+             </Frame>
+
+            <Image Grid.Row="2"
+                   Source="welcome.jpg"
+                   Margin="0,-80,0,0"
+                   WidthRequest="400"
+                   HeightRequest="390"/>
+
+         </Grid>
+    </ContentPage>
+
+      <local:MateriaView Title="Materia" IconImageSource="books.png"></local:MateriaView>
+    <local:SemestreView Title="Semeste" IconImageSource="semester.png"></local:SemestreView>
+   
+</TabbedPage>
